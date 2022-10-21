@@ -2,6 +2,7 @@
 .idea/
 .vscode/
 .DS_Store
+libs/
 node_modules/
 yarn.lock
 package-lock.json
