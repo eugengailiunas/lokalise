@@ -9,7 +9,8 @@
 
 html {
   font-size: $font-size;
-
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  color: $color-primary;
 }
 
 h1 {}

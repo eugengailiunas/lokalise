@@ -1,0 +1,17 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.navbar {
+  &__list {
+    display: flex;
+    gap: 25px;
+    @include unlist;
+  }
+
+  &__item {}
+
+  &__link {
+    display: block;
+    padding: 1em;
+  }
+}
