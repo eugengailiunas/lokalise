@@ -166,6 +166,22 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Graphik LCG";
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"), url("../fonts/GraphikLCG-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Graphik LCG";
+  font-weight: 600;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"), url("../fonts/GraphikLCG-Semibold.woff") format("woff");
+}
 *,
 *::before,
 *::after {
@@ -177,14 +193,18 @@ html {
   font-size: 16px;
 }
 
+body {
+  font-family: "Graphik LCG", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
 }
 
 .container {
-  max-width: 1280px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  width: min(100% - 40px, 1290px);
+
+  margin-inline: auto;
 }

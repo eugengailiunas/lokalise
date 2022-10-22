@@ -1,3 +1,6 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 *,
 *::before,
 *::after {
@@ -5,10 +8,15 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: $font-size;
+
 }
 
-body {}
+body {
+  font-size: 15px;
+  font-family: $font-primary;
+  font-weight: 400;
+}
 
 a {
   text-decoration: none;

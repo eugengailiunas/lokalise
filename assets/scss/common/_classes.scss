@@ -1,7 +1,7 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
 .container {
-  max-width: 1280px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  width: min(100% - 40px, 1290px);
+  margin-inline: auto;
 }
