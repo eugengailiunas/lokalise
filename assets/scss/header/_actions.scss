@@ -1,0 +1,27 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn--light {
+  background-color: $color-white;
+  border: 1px solid $color-gray;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.btn--accent {
+  background-color: $color-accent;
+  color: $color-white;
+  border: 1px solid $color-accent;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.btn--sm {
+  width: 120px;
+  height: 45px;
+}

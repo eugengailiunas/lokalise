@@ -214,6 +214,10 @@ a {
   margin-inline: auto;
 }
 
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .header::after {
   position: absolute;
   left: 50%;
@@ -260,4 +264,34 @@ a {
   display: block;
 
   padding: 1em;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 10px;
+}
+
+.btn--light {
+  border: 1px solid rgba(204, 204, 204, 0.8);
+  background-color: #ffffff;
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn--accent {
+  color: #ffffff;
+  border: 1px solid #ff541b;
+  background-color: #ff541b;
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+.btn--sm {
+  width: 120px;
+  height: 45px;
 }
