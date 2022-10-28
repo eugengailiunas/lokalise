@@ -5,3 +5,36 @@
   width: min(100% - 40px, 1290px);
   margin-inline: auto;
 }
+
+.btn {
+  font-weight: 600;
+  font-size: $font-size;
+  text-align: center;
+
+  color: #ffffff;
+
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btn--light {
+  border-color: rgba($color-primary, 0.5);
+  color: $color-primary;
+}
+
+.btn--accent {
+  background-color: $color-accent;
+  border-color: $color-accent;
+}
+
+.btn--sm {
+  @include md-min {
+    min-width: 120px;
+    min-height: 45px;
+  }
+
+  @include md {
+    min-width: 100px;
+    min-height: 40px;
+  }
+}

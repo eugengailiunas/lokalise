@@ -2,9 +2,6 @@
 @use "../mixins" as *;
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
 
   &::after {
     position: absolute;
@@ -19,11 +16,29 @@
   &__menu {
     position: relative;
     display: flex;
-    gap: 35px;
+    flex-wrap: wrap;
+    gap: 25px 35px;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &__logo {
+    @include sm {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__actions {
-    margin-left: auto;
+
+    @include sm-min {
+      margin-left: auto;
+    }
+
+
+    @include xl {
+      margin-right: auto;
+    }
   }
 }
