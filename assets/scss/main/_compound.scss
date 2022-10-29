@@ -1,0 +1,58 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.compound {
+  padding-top: 110px;
+  padding-bottom: 90px;
+  background-color: #ff9675;
+  text-align: center;
+
+  &__title {
+    max-width: 720px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto;
+
+
+    @include xl-min {
+      margin-bottom: 110px;
+      font-size: 50px;
+      padding-left: 82px;
+    }
+
+    @include xl {
+      margin-bottom: 75px;
+      font-size: 40px;
+      padding-left: 0;
+    }
+  }
+
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include xl-min {
+      gap: 110px;
+    }
+
+    @include xl-lg {
+      gap: 65px;
+    }
+
+    @include lg {
+      gap: 65px;
+    }
+  }
+
+  &__picture {
+    @include lg-min {
+      flex-basis: 0;
+    }
+
+    @include lg {
+      flex-basis: 33.333%;
+    }
+  }
+}
