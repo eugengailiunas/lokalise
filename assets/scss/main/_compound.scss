@@ -8,6 +8,7 @@
   text-align: center;
 
   &__title {
+    max-width: 720px;
     font-weight: 600;
     line-height: 1.2;
     margin: auto;
@@ -16,18 +17,23 @@
     @include xl-min {
       max-width: 720px;
       margin-bottom: 83px;
-      font-size: 50px;
     }
 
-    @include xl {
+    @include xl-xx {
+      max-width: none;
       margin-bottom: 75px;
-      font-size: 20px;
+    }
+
+    @include xx {
+      max-width: none;
+      margin-bottom: 55px;
     }
   }
 
 
   &__content {
     display: flex;
+    flex-wrap: wrap;
 
 
     @include xl-min {
@@ -35,19 +41,22 @@
       justify-content: space-between;
     }
 
-    @include xl-lg {
-      gap: 65px;
-      justify-content: center;
+    @include xl-md {
+      gap: 55px;
+      justify-content: space-evenly;
     }
 
-    @include lg-xx {
-      gap: 55px;
+    @include md-xx {
+      gap: 40px;
       justify-content: center;
     }
 
     @include xx {
+      gap: 25px;
+      justify-content: center;
       flex-direction: column;
     }
+
   }
 
   &__picture {
@@ -55,12 +64,16 @@
       flex-basis: 0;
     }
 
-    @include xl-xx {
+    @include xl-md {
+      flex-basis: 25%;
+    }
+
+    @include md-xx {
       flex-basis: 33.333%;
     }
 
     @include xx {
-      flex-direction: column;
+      flex-basis: 0;
     }
   }
 }
