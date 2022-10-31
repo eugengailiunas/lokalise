@@ -8,51 +8,59 @@
   text-align: center;
 
   &__title {
-    max-width: 720px;
     font-weight: 600;
     line-height: 1.2;
     margin: auto;
 
 
     @include xl-min {
-      margin-bottom: 110px;
+      max-width: 720px;
+      margin-bottom: 83px;
       font-size: 50px;
-      padding-left: 82px;
     }
 
     @include xl {
       margin-bottom: 75px;
-      font-size: 40px;
-      padding-left: 0;
+      font-size: 20px;
     }
   }
 
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
 
     @include xl-min {
-      gap: 110px;
+      gap: 85px;
+      justify-content: space-between;
     }
 
     @include xl-lg {
       gap: 65px;
+      justify-content: center;
     }
 
-    @include lg {
-      gap: 65px;
+    @include lg-xx {
+      gap: 55px;
+      justify-content: center;
+    }
+
+    @include xx {
+      flex-direction: column;
     }
   }
 
   &__picture {
-    @include lg-min {
+    @include xl-min {
       flex-basis: 0;
     }
 
-    @include lg {
+    @include xl-xx {
       flex-basis: 33.333%;
+    }
+
+    @include xx {
+      flex-direction: column;
     }
   }
 }

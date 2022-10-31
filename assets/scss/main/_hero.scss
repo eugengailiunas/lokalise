@@ -64,10 +64,6 @@ $width: 610px;
     grid-area: act;
     display: flex;
     gap: 10px;
-
-    @include lg {
-      justify-content: center;
-    }
   }
 
   &__notes {
