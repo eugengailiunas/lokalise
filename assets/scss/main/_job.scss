@@ -82,6 +82,11 @@
   @include xl-min {
     padding-right: 130px;
   }
+
+  @include lg {
+    text-align: center;
+  }
+
 }
 
 %job-content-right {
@@ -91,13 +96,13 @@
   @include xl-min {
     padding-left: 110px;
   }
-}
 
-%job-title {
   @include lg {
-    align-items: center;
+    text-align: center;
   }
 }
+
+%job-title {}
 
 %job-description {
   font-weight: 400;
