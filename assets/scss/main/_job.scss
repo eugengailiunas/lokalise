@@ -1,0 +1,126 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.job {}
+
+.control,
+.quality {
+  @extend %job-control;
+
+  &__content {
+    @extend %job-content-left;
+  }
+
+  &__title {
+    @extend %job-title;
+
+  }
+
+  &__description {
+    @extend %job-description;
+  }
+
+  &__btn {
+    @extend %job-btn;
+  }
+
+  &-picture {
+    @extend %job-picture;
+  }
+
+  &__image {
+    @extend %job-image;
+  }
+}
+
+.time,
+.work {
+  @extend %job-control;
+  flex-direction: row-reverse;
+
+  &__content {
+    @extend %job-content-right;
+  }
+
+  &__description {
+    @extend %job-description;
+  }
+
+  &__btn {
+    @extend %job-btn;
+  }
+
+  &-picture {
+    @extend %job-picture;
+  }
+
+  &__image {
+    @extend %job-image;
+  }
+}
+
+%job-control {
+  display: flex;
+  gap: $gap-lg;
+  align-items: center;
+
+  @include lg-min {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  @include lg {
+    margin-bottom: 75px;
+    flex-direction: column;
+  }
+}
+
+%job-content-left {
+  flex-basis: 200px;
+  flex-grow: 1;
+
+  @include xl-min {
+    padding-right: 130px;
+  }
+}
+
+%job-content-right {
+  flex-basis: 200px;
+  flex-grow: 1;
+
+  @include xl-min {
+    padding-left: 110px;
+  }
+}
+
+%job-title {
+  @include lg {
+    align-items: center;
+  }
+}
+
+%job-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+%job-btn {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+%job-picture {
+  flex-basis: 200px;
+  flex-grow: 1;
+
+  @include lg {
+    width: 100%;
+  }
+}
+
+%job-image {
+  width: 100%;
+}

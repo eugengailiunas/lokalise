@@ -44,4 +44,19 @@ h2 {
   }
 }
 
-h3 {}
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+
+  @include xl-min {
+    font-size: 50px;
+  }
+
+  @include xl-lg {
+    font-size: 40px;
+  }
+
+  @include lg {
+    font-size: 30px;
+  }
+}

@@ -44,3 +44,7 @@
   min-width: 160px;
   min-height: 60px;
 }
+
+.visually-hidden {
+  @include visually-hidden;
+}
