@@ -1,0 +1,35 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.teams {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  &__title {}
+
+  &__content {
+    display: flex;
+    column-gap: 50px;
+  }
+}
+
+.managers,
+.developers,
+.translators {
+  display: flex;
+  flex-direction: column-reverse;
+  column-gap: 50px;
+
+  &__content {
+    flex-basis: 33.33%;
+    justify-content: center;
+  }
+
+  &__title {}
+
+  &__descriptions {}
+
+  &__link {}
+
+  &__picture {}
+}
