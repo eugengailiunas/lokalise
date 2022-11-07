@@ -28,6 +28,11 @@
   border-color: $color-accent;
 }
 
+.btn--dark {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
 .btn--sm {
   @include md-min {
     min-width: 120px;
@@ -42,6 +47,11 @@
 
 .btn--md {
   min-width: 160px;
+  min-height: 60px;
+}
+
+.btn--lg {
+  min-width: 193px;
   min-height: 60px;
 }
 

@@ -1,0 +1,35 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.try {
+  background-color: #ff9675;
+  text-align: center;
+  padding-top: 145px;
+  padding-bottom: 160px;
+
+  &__title {
+    max-width: 700px;
+    margin: auto;
+
+    @include md-min {
+      margin-bottom: 35px;
+    }
+
+    @include md {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.5;
+
+    @include md-min {
+      margin-bottom: 50px;
+    }
+
+    @include md {
+      margin-bottom: 30px;
+    }
+  }
+}
