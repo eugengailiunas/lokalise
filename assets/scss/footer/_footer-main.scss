@@ -1,0 +1,88 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.footer-main {
+
+
+  &__wrap {
+    display: grid;
+    grid-template-areas: "cse ftmn";
+    border-bottom: 1px solid black;
+
+    @include md {
+      grid-template-areas: "ftmn" "cse";
+      text-align: center;
+    }
+
+
+  }
+
+  &__content {}
+}
+
+.case {
+  grid-area: cse;
+
+  &__title {
+    grid-area: ttl;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    @include md-min {
+      font-size: 40px;
+    }
+
+    @include md {
+      font-size: 35px;
+    }
+  }
+
+  &__picture {
+    grid-area: pic;
+    margin-bottom: 10px;
+  }
+
+  &__image {}
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__link {}
+
+  &__description {
+    grid-area: dsc;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @include md-min {
+      max-width: 290px;
+    }
+
+    @include md {
+      text-align: center;
+    }
+  }
+
+  &__more {
+    margin-bottom: 100px;
+
+  }
+
+  &__more-link {
+    grid-area: link;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 1em;
+    margin-left: -1em;
+  }
+
+}

@@ -1,0 +1,48 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.footer-secondary {
+
+  &__content {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-between;
+    padding-top: 60px;
+
+    @include sm {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.content {
+  &__left {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__picture {
+    padding-top: 18px;
+  }
+
+  &__link {}
+
+  &__image {}
+
+  &__description {
+    flex-basis: 301px;
+  }
+
+  &__right {}
+
+  &__copyright {
+    padding-top: 5px;
+    margin: 0;
+    margin-bottom: 1px;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

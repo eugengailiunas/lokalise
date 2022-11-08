@@ -1,0 +1,126 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.footer-menu {
+  grid-area: ftmn;
+  display: flex;
+
+  @include xl-min {
+    gap: 60px;
+    margin-left: 50px;
+  }
+
+  @include xl-md {
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-left: 50px;
+  }
+
+  @include md {
+    margin: auto;
+  }
+}
+
+.product,
+.support,
+.company,
+.legal {
+
+  @include xl-md {
+    flex-basis: 45%;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &__list {
+    @include unlist;
+
+    @include md {
+      display: none;
+    }
+  }
+
+
+  &__item {}
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+    display: block;
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: -5px;
+
+  }
+}
+
+.footer-main__btn {
+  position: relative;
+
+  width: 40px;
+  height: 30px;
+
+  cursor: pointer;
+
+  @include md-min {
+    display: none;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 5px;
+
+    transition: 0.25s ease-in-out;
+    transform: rotate(0deg);
+
+    opacity: 1;
+    border-radius: 5px;
+    background-color: $color-accent;
+
+    &:nth-of-type(1) {
+      top: 0;
+    }
+
+    &:nth-of-type(2) {
+      top: 12px;
+    }
+
+    &:nth-of-type(3) {
+      top: 24px;
+    }
+  }
+
+  &.active span {
+    &:nth-of-type(1) {
+      top: 12px;
+      transform: rotate(135deg);
+    }
+
+    &:nth-of-type(2) {
+      left: -40px;
+
+      opacity: 0;
+    }
+
+    &:nth-of-type(3) {
+      top: 12px;
+      transform: rotate(-135deg);
+    }
+  }
+}
