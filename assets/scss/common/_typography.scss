@@ -8,37 +8,38 @@
 }
 
 html {
-  font-size: $font-size;
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
+
+  font-size: $font-size;
 }
 
 body {
-  font-size: 15px;
   font-family: $font-primary;
+  font-size: 15px;
   font-weight: 400;
 }
 
 a {
   text-decoration: none;
+
   color: $color-primary;
 }
 
-h1 {}
+
 
 h2 {
   text-align: center;
+
   font-weight: 600;
   line-height: 1.2;
 
   @include xl-min {
     font-size: 50px;
   }
-
   @include xl-lg {
     font-size: 40px;
   }
-
   @include lg {
     font-size: 30px;
   }
@@ -51,11 +52,9 @@ h3 {
   @include xl-min {
     font-size: 50px;
   }
-
   @include xl-lg {
     font-size: 40px;
   }
-
   @include lg {
     font-size: 30px;
   }

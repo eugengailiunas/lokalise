@@ -4,31 +4,34 @@
 .integrate {
   padding-top: 160px;
   padding-bottom: 160px;
+
   text-align: center;
 
 
   &__title {
     max-width: 791px;
+    margin: auto;
+
+    text-align: center;
+
     font-weight: 600;
     line-height: 1.15;
-    text-align: center;
-    margin: auto;
 
     @include lg-min {
       font-size: 65px;
     }
-
     @include lg {
       font-size: 50px;
     }
   }
 
   &__description {
-    margin: auto;
     max-width: 540px;
+    margin: auto;
+    margin-bottom: 30px;
+
     font-size: 25px;
     line-height: 1.2;
-    margin-bottom: 30px;
   }
 
   &__picture {
@@ -39,11 +42,8 @@
     @include lg-min {
       width: 83%;
     }
-
     @include lg {
       width: 100%;
     }
   }
-
-  &__action {}
 }

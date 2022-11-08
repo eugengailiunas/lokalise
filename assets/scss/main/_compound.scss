@@ -2,29 +2,29 @@
 @use "../mixins" as *;
 
 .compound {
+  margin-bottom: 100px;
   padding-top: 110px;
   padding-bottom: 90px;
-  background-color: #ff9675;
+
   text-align: center;
-  margin-bottom: 100px;
+
+  background-color: #ff9675;
 
   &__title {
     max-width: 720px;
-    font-weight: 600;
-    line-height: 1.2;
     margin: auto;
 
+    font-weight: 600;
+    line-height: 1.2;
 
     @include xl-min {
       max-width: 720px;
       margin-bottom: 83px;
     }
-
     @include xl-xx {
       max-width: none;
       margin-bottom: 75px;
     }
-
     @include xx {
       max-width: none;
       margin-bottom: 55px;
@@ -36,43 +36,39 @@
     display: flex;
     flex-wrap: wrap;
 
-
     @include xl-min {
-      gap: 85px;
       justify-content: space-between;
-    }
 
+      gap: 85px;
+    }
     @include xl-md {
-      gap: 55px;
       justify-content: space-evenly;
-    }
 
+      gap: 55px;
+    }
     @include md-xx {
+      justify-content: center;
+
       gap: 40px;
-      justify-content: center;
     }
-
     @include xx {
-      gap: 25px;
-      justify-content: center;
       flex-direction: column;
-    }
+      justify-content: center;
 
+      gap: 25px;
+    }
   }
 
   &__picture {
     @include xl-min {
       flex-basis: 0;
     }
-
     @include xl-md {
       flex-basis: 25%;
     }
-
     @include md-xx {
       flex-basis: 33.333%;
     }
-
     @include xx {
       flex-basis: 0;
     }

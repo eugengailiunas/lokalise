@@ -2,13 +2,13 @@
 @use "../mixins" as *;
 
 .footer-secondary {
-
   &__content {
     display: flex;
-    column-gap: 50px;
     justify-content: space-between;
+
     padding-top: 50px;
 
+    column-gap: 50px;
     @include sm {
       flex-direction: column;
       justify-content: center;
@@ -19,6 +19,7 @@
 .content {
   &__left {
     display: flex;
+
     gap: 15px;
   }
 
@@ -26,32 +27,35 @@
     padding-top: 12px;
   }
 
-  &__link {}
 
-  &__image {}
+
+
 
   &__description {
     flex-basis: 301px;
-    font-weight: 400;
+
     font-size: 12px;
+    font-weight: 400;
     line-height: 1.25;
   }
 
-  &__right {}
+
 
   &__copyright {
-    padding-top: 5px;
     margin: 0;
     margin-bottom: 1px;
-    font-weight: 400;
+    padding-top: 5px;
+
     font-size: 12px;
+    font-weight: 400;
     line-height: 1.25;
   }
 
   &__text {
     margin: 0;
-    font-weight: 400;
+
     font-size: 12px;
+    font-weight: 400;
     line-height: 1.25;
   }
 }

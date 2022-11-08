@@ -4,6 +4,7 @@
 .lovers {
   padding-top: 110px;
   padding-bottom: 110px;
+
   background-color: #e0bb93;
 
   &__content {
@@ -12,11 +13,9 @@
     @include lg-min {
       grid-template-areas: "pic ttl log";
     }
-
     @include lg-md {
       grid-template-areas: "ttl ttl" "pic log";
     }
-
     @include md {
       grid-template-areas: "ttl" "pic" "log";
     }
@@ -24,75 +23,71 @@
 
 
   &__title {
-    grid-area: ttl;
-    font-weight: 600;
-    line-height: 1.43;
     text-align: start;
 
+    font-weight: 600;
+    line-height: 1.43;
 
+    grid-area: ttl;
     @include xl-min {
       margin-right: 125px;
       margin-left: 70px;
+
       font-size: 35px;
     }
-
     @include xl-lg {
-      margin-left: 50px;
       margin-right: 100px;
+      margin-left: 50px;
+
       font-size: 30px;
     }
-
     @include lg {
-      font-size: 35px;
       text-align: center;
-    }
 
+      font-size: 35px;
+    }
   }
 
   &__picture {
     grid-area: pic;
-
-
     @include lg {
       text-align: center;
     }
-
   }
 
   &__logo {
-    grid-area: log;
     display: flex;
+
     gap: 70px;
-
-
+    grid-area: log;
     @include xl-min {
       align-items: center;
-      border-left: 1px solid black;
-      padding-left: 70px;
       justify-content: center;
-    }
 
+      padding-left: 70px;
+
+      border-left: 1px solid black;
+    }
     @include xl-lg {
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+
       padding-left: 70px;
+
       border-left: 1px solid black;
     }
-
     @include lg-md {
-      justify-content: center;
-      padding-left: 30px;
       align-items: center;
+      justify-content: center;
+
+      padding-left: 30px;
+
       border-left: 1px solid black;
     }
-
     @include md {
-      padding-top: 40px;
       justify-content: center;
+
+      padding-top: 40px;
     }
   }
-
-  &__users {}
-
-  &__rate {}
 }
