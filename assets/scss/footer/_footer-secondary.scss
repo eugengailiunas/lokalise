@@ -7,7 +7,7 @@
     display: flex;
     column-gap: 50px;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 50px;
 
     @include sm {
       flex-direction: column;
@@ -23,7 +23,7 @@
   }
 
   &__picture {
-    padding-top: 18px;
+    padding-top: 12px;
   }
 
   &__link {}
@@ -32,6 +32,9 @@
 
   &__description {
     flex-basis: 301px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
   }
 
   &__right {}
@@ -40,9 +43,15 @@
     padding-top: 5px;
     margin: 0;
     margin-bottom: 1px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
   }
 
   &__text {
     margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
   }
 }
